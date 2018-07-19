@@ -194,7 +194,7 @@ class Select extends React.Component {
 		if (prevState.isOpen !== this.state.isOpen) {
 			this.toggleTouchOutsideEvent(this.state.isOpen);
 			const handler = this.state.isOpen ? this.props.onOpen : this.props.onClose;
-			handler && handler();
+			handler && handler(this);
 		}
 	}
 
